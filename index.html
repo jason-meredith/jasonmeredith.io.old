@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+
+    <!-- Custom css -->
     <link rel="stylesheet" href="css/style.css">
 
 
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="js/ts/projects.js"></script>
+    <script src="js/ts/icons.js"></script>
+
+
 
 
 
@@ -17,6 +28,12 @@
 
 </head>
 <body>
+
+<nav class="navbar navbar-expand-sm navbar-light fixed-bottom">
+    <ul class="navbar-nav ml-auto" id="navbar" >
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+    </ul>
+</nav>
 
 <div class="jumbotron vertical-center">
     <div class="container">
@@ -44,16 +61,6 @@
 
 
                     </table>
-<!--
-                    <table width="100%">
-
-                        <tr>
-                            <td>i</td><td>Ottawa, Canada</td>
-                        </tr>
-                        <tr>
-                            <td><img class="linkIcon" src="img/GitHub.png"></td><td>@jason-meredith</td>
-                        </tr>
-                    </table>-->
 
                     <br>
 
@@ -64,10 +71,91 @@
     </div>
 </div>
 
+<br><hr><br>
+<div class="container">
+<div id="content" >
+    <section id="projects">
+    <h2>Projects</h2>
+
+        <div class="row">
+            <div class="col col-lg-10">
+                <div id="projectsList"></div>
+            </div>
+            <div class="col col-lg-2 hidden-md-down">
+                <div id="grid"></div>
+            </div>
+        </div>
+
+
+
+        <br>
+
+    </section>
+</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+
+
+
+    var projectLoader = new ProjectLoader("data/projects.json", "projectsList");
+
+
+    var grid = new Grid([
+        'golang',
+        'java',
+        'typescript',
+        'ruby',
+        'python',
+        'android',
+        'mysql',
+        'git',
+        'rails',
+        'django',
+        'c',
+        'gradle',
+        'kotlin', 'centos', 'mongodb', 'nodejs','lua', 'arch' ]);
+
+
+
+    grid.icon_horizontal_count = 3;    // How many cells wide this grid should be
+    grid.icon_size = 80;               // Unhighlighted icon size
+    grid.icons_img_dir = 'img/skills';        // Folder, relative to this file, that contains icon images
+    grid.highlight_scale = 1.1;        // Highlight image size ratio
+
+    grid.add_to_page('grid');
+
+
+
+    var addEventHander = function() {
+        $(".project").mouseenter(function () {
+
+            var skills = $(this).data("skills").split(",");
+
+            grid.highlight(skills);
+
+        });
+
+        $(".project").mouseleave(function () {
+            grid.unhighlight_all();
+        })
+    };
+
+    projectLoader.addEventHandlers = addEventHander;
+
+    projectLoader.retrieve_project_json();
+
+
+    // Scrollspy
+    $("body").scrollspy({target: '#navbar'});
+
+
+
+</script>
 
 
 </body>
