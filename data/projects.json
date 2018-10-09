@@ -18,10 +18,7 @@
     "name": "Timeslots",
     "description": "Rails app for aggregating iCals and finding available gaps for multiple users coordinating events",
     "github": "https://www.github.com/jason-meredith/timeslots",
-    "links": [{
-      "label": "Try it out",
-      "url": "https://www.github.com/jason-meredith/timeslots"
-    },
+    "links": [
       {
         "label": "Github",
         "url": "https://www.github.com/jason-meredith/timeslots"
@@ -39,61 +36,17 @@
     "description": "Local multiplayer TUI-based Battleship style game built for team play",
     "github": "https://www.github.com/jason-meredith/warships",
     "links": [
-      {
-        "label": "Screenshots",
-        "url": "https://www.github.com/jason-meredith/timeslots"
-      },
+      
+      
       {
         "label": "Github",
-        "url": "https://www.github.com/jason-meredith/timeslots"
+        "url": "https://www.github.com/jason-meredith/warships"
       }
     ],
     "tech": [
       "golang"
     ]
-  },
-  {
-    "name": "GROGlib",
-    "description": "A highly detailed game library for developing 2D spaceship warface games",
-    "github": "https://www.github.com/jason-meredith/grog-lib",
-    "links": [
-      {
-        "label": "Browse the Wiki",
-        "url": "https://www.github.com/jason-meredith/timeslots"
-      },
-      {
-        "label": "Github",
-        "url": "https://www.github.com/jason-meredith/timeslots"
-      }
-    ],
-    "tech": [
-      "c",
-      "lua"
-    ]
-  },
-  {
-    "name": "GROG",
-    "description": "Android 2D space tactics game with NFC serverless multiplayer built implementing GROGlib library",
-    "github": "https://www.github.com/jason-meredith/grog",
-    "links": [
-      {
-        "label": "Check out in Google Play Store",
-        "url": "https://www.github.com/jason-meredith/timeslots"
-      },
-      {
-        "label": "Github",
-        "url": "https://www.github.com/jason-meredith/timeslots"
-      }
-    ],
-    "tech": [
-      "android",
-      "kotlin",
-      "java",
-      "lua",
-      "c"
-    ]
-  }
 
-
+    }
 ]
 }
