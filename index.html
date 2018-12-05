@@ -31,12 +31,14 @@
 
 <nav class="navbar navbar-expand-sm navbar-light fixed-bottom">
     <ul class="navbar-nav ml-auto" id="navbar" >
+        <li><a class="nav-link" href="#me">Jason Meredith</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
     </ul>
 </nav>
-
-<div class="jumbotron vertical-center">
-    <div class="container">
+<div id="content" >
+<div id="me"class="jumbotron vertical-center">
+    <div  class="container">
         <div class="row">
             <div class="col col-lg-4">
                 <img id="profileImg" src="img/me.jpg">
@@ -72,26 +74,106 @@
 </div>
 
 <br><hr><br>
-<div class="container">
-<div id="content" >
-    <section id="projects">
-    <h2>Projects</h2>
 
-        <div class="row">
-            <div class="col col-lg-10">
-                <div id="projectsList"></div>
-            </div>
-            <div class="col col-lg-2 hidden-md-down">
-                <div id="grid"></div>
-            </div>
+    <div class="jumbotron vertical-page">
+        <div class="container">
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <div class="row">
+                    <div class="col col-lg-10">
+                        <div id="projectsList"></div>
+                    </div>
+                    <div class="col col-lg-2 hidden-md-down">
+                        <div id="grid"></div>
+                    </div>
+                </div>
+
+
+
+                <br>
+
+            </section>
         </div>
+    </div>
+
+
+<br><hr><br>
+
+<div class="jumbotron vertical-page">
+    <div class="container">
+        <section id="education">
+            <h2>Education</h2>
+            <br>
 
 
 
-        <br>
+            <div class="row school">
+                <div class="col col-lg-8 ">
+                <table style="width: 100%;">
+                    <tr>
+                        <td><img src="img/edu/algonquin.png" class="edu"></td>
+                        <td>
+                            <h3>Algonquin College</h3>
+                            <h5 class="text-muted">Computer Programming</h5>
 
-    </section>
+                        </td>
+                    </tr>
+                </table>
+
+                </div><div class="col col-lg-4">
+                    <div class="edudate">[ Sept 2016 - April 2019 ]</div>
+                </div>
+            </div>
+
+
+            <div class="row school">
+                <div class="col col-lg-8 ">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td><img src="img/edu/bell.gif" class="edu"></td>
+                            <td>
+                                <h3>Bell HS</h3>
+                                <h5 class="text-muted">High School Diploma</h5>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </div><div class="col col-lg-4">
+                <div class="edudate">[ Sept 2007 - June 2011 ]</div>
+            </div>
+            </div>
+<!--
+            <div class="row school">
+                <div class="col col-sm-2">
+                    <img src="img/edu/algonquin.png" class="edu">
+                </div>
+                <div class="col col-sm-8 ">
+                    <h3>Algonquin College</h3>
+                    <h5 class="text-muted">Sept 2019 - Present</h5>
+                </div>
+            </div>
+
+            <div class="row school">
+                <div class="col col-sm-2">
+                    <img src="img/edu/bell.gif" class="edu">
+                </div>
+                <div class="col col-sm-8 ">
+                    <h3>Bell High School</h3>
+                    <h5 class="text-muted">Class of 2011</h5>
+                </div>
+            </div>
+
+
+-->
+            <br>
+
+        </section>
+
+    </div>
 </div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
@@ -101,7 +183,7 @@
 <script src="js/smooth-scroll.js"></script>
 <script>
 
-  // Project loader
+    // Project loader
 
     var projectLoader = new ProjectLoader("data/projects.json", "projectsList");
 
@@ -118,8 +200,13 @@
         'rails',
         'django',
         'c',
-        'gradle',
-        'kotlin', 'centos', 'mongodb', 'nodejs','lua', 'arch' ]);
+        //'gradle',
+        //'kotlin',
+        'centos',
+        'mongodb',
+        'nodejs',
+        //'lua',
+        'arch' ]);
 
 
 
