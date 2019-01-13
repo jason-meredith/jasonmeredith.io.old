@@ -16,12 +16,16 @@
 "projects":[
   {
     "name": "Timeslots",
-    "description": "Rails app for aggregating iCals and finding available gaps for multiple users coordinating events",
+    "description": "Rails app for aggregating iCalendar files and finding available gaps for multiple users coordinating events",
     "github": "https://www.github.com/jason-meredith/timeslots",
     "links": [
       {
         "label": "Github",
         "url": "https://www.github.com/jason-meredith/timeslots"
+      },
+      {
+        "label": "Live Demo",
+        "url": "https://meredith-timeslots.herokuapp.com/"
       }
     ],
     "tech": [
@@ -48,5 +52,6 @@
     ]
 
     }
+
 ]
 }

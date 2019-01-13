@@ -110,5 +110,10 @@ hr {
 }
 
 .edutable {
+    table-layout: fixed;
     width: 100%;
+}
+
+.eduicon {
+    width:140px;
 }
