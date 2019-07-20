@@ -3,16 +3,19 @@
     "java",
     "typescript",
     "ruby",
+    "golang",
     "python",
     "arch",
     "android",
     "mysql",
     "git",
     "rails",
-    "django",
     "c",
-    "gradle",
-    "kotlin", "centos", "mongodb", "nodejs", "vim", "windows", "lua", "react", "redis" ],
+    "kotlin",
+    "mongodb",
+    "nodejs",
+    "windows",
+    "react"],
 "projects":[
   {
     "name": "Timeslots",
@@ -72,7 +75,7 @@
 
 {
     "name": "jasonmeredith.io",
-    "description": "Personal porfolio webpage setup as a simple Nodejs app",
+    "description": "Personal porfolio webpage built as a simple React.js app",
     "github": "https://www.github.com/jason-meredith/SQLvsMongoDB-Speedtest",
     "links": [
       
@@ -83,7 +86,7 @@
       }
     ],
     "tech": [
-      "nodejs", "typescript" 
+      "react"
     ]
 
     }
