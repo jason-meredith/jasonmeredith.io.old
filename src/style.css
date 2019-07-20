@@ -117,3 +117,40 @@ hr {
 .eduicon {
     width:140px;
 }
+
+
+
+/* Icons */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 60px));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+.icon {
+
+    max-width: 50px;
+    max-width: 50px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.highlight {
+    transition: all .2s ease-in-out;
+}
+
+.highlight:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.highlighted {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
