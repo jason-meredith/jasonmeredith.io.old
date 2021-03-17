@@ -1,0 +1,123 @@
+{
+  "me": {
+    "name": "Jason Meredith",
+    "location": "Ottawa, Canada",
+    "links": {
+      "github": "https://www.github.com/jason-meredith",
+      "linkedin": "https://www.linkedin.com/in/jason-meredith-115b2384/",
+      "email": ["me", "@", "jasonmeredith.io"]
+    }
+  },
+  "experience": [
+    {
+      "company": "Rewind",
+      "title": "Full Stack Cloud Developer",
+      "timespan": "[ Aug 2019 - Present ]",
+      "description": [
+        "Implemented enhancements to company administrative interface to bundle accounts, change billing plans, and cancel subscriptions using Stripe API",
+        "Helped design and build a webhook delay and aggregation solution using AWS Lambda, SQS and DynamoDB",
+        "Building custom objects in Hubspot for tracking customer data in a manner that mirrors internal DB structures",
+        "Built a new on-boarding flow for high value Intuit customers to easily transition into agreed-upon wholesale rates using React and Stripe API"
+      ],
+      "img": "/img/work/rewind.svg"
+    }
+  ],
+  "education": [
+    {
+      "institute": "Algonquin College",
+      "program": "Computer Programming Diploma",
+      "timespan": "[ Sept 2017 - April 2019 ]",
+      "img": "/img/edu/algonquin.png"
+    }
+  ],
+  "projects": {
+    "skills": [
+      "java",
+      "heroku",
+      "ruby",
+      "golang",
+      "python",
+      "docker",
+      "mysql",
+      "redis",
+      "rails",
+      "c",
+      "aws",
+      "mongodb",
+      "nodejs",
+      "terraform",
+      "react",
+      "postgres"
+    ],
+    "projects": [
+      {
+        "name": "Planks.io",
+        "description": "Rails app for aggregating iCalendar files and finding available gaps for multiple users coordinating events",
+        "github": "https://www.github.com/jason-meredith/timeslots",
+        "links": [
+          {
+            "label": "Visit",
+            "url": "https://www.planks.io"
+          }
+        ],
+        "tech": [
+          "ruby",
+          "rails",
+          "postgres",
+          "react",
+          "docker",
+          "heroku"
+        ]
+      },
+      {
+        "name": "Warships",
+        "description": "Local multiplayer TUI-based Battleship style game built for team play",
+        "github": "https://www.github.com/jason-meredith/warships",
+        "links": [
+          {
+            "label": "Github",
+            "url": "https://www.github.com/jason-meredith/warships"
+          }
+        ],
+        "tech": [
+          "golang",
+          "aws",
+          "docker",
+          "terraform"
+        ]
+      },
+      {
+        "name": "MySQL/MongoDB Benchmark Tester",
+        "description": "A Java Swing application that runs simultaneous insertions statements against a MySQL and a MongoDB database to test for differences in speed based on data complexity",
+        "github": "https://www.github.com/jason-meredith/SQLvsMongoDB-Speedtest",
+        "links": [
+          {
+            "label": "Github",
+            "url": "https://www.github.com/jason-meredith/SQLvsMongoDB-Speedtest"
+          }
+        ],
+        "tech": [
+          "java",
+          "mysql",
+          "mongodb"
+        ]
+      },
+      {
+        "name": "jasonmeredith.io",
+        "description": "Personal porfolio webpage built as a simple React.js app",
+        "github": "https://www.github.com/jason-meredith/SQLvsMongoDB-Speedtest",
+        "links": [
+          {
+            "label": "Github",
+            "url": "https://www.github.com/jason-meredith/jasonmeredith.io"
+          }
+        ],
+        "tech": [
+          "react",
+          "nodejs",
+          "heroku"
+        ]
+      }
+    ]
+  }
+}
