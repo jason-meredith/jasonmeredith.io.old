@@ -52,7 +52,7 @@
     "projects": [
       {
         "name": "Planks.io",
-        "description": "Rails app for aggregating iCalendar files and finding available gaps for multiple users coordinating events",
+        "description": "A digital platform designed to foster healthier politics",
         "github": "https://www.github.com/jason-meredith/timeslots",
         "links": [
           {
