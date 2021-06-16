@@ -23,7 +23,7 @@ export default function Me(props) {
                   </tr>
                   <tr>
                     <td><img alt="Email Address" className="linkIcon" src="img/email.png" /></td>
-                    <td><a href="#" onClick={() => {window.location.href='mailto:jasonmeredith93@gmail.com'}}>jasonmeredith93 (at) gmail.com</a></td>
+                    <td><a href="mailto:jasonmeredith93@gmail.com">jasonmeredith93@gmail.com</a></td>
                   </tr>
                   <tr>
                     <td><img alt="LinkedIn Link" className="linkIcon" src="img/linkedin.png" /></td>

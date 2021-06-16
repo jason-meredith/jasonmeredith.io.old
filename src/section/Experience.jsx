@@ -10,24 +10,37 @@ export default function Experience(props) {
     return (
       <div className="row school">
         <div className="col col-lg-8 ">
-          <table style={{ width: 100 + "%" }}>
-            <tbody>
-              <tr>
-                <td className="eduicon"><img alt={job.company} src={job.img} className="edu" /></td>
-                <td>
-                  <h3>{job.company}</h3>
-                  <h5 className="text-muted">{job.title}</h5>
-                  <ul>
-                  {description}
-                  </ul>
+          <div className='d-none d-lg-block'>
+            <table style={{ width: 100 + "%" }}>
+              <tbody>
+                <tr>
+                  <td className="eduicon"><img alt={job.company} src={job.img} className="edu " /></td>
+                  <td>
+                    <h3>{job.company}</h3>
+                    <h5 className="text-muted">{job.title}</h5>
+                    <ul>
+                    {description}
+                    </ul>
 
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="d-lg-none">
+          <img alt={job.company} src={job.img} className="edu d-lg-none mx-auto d-block" />
+          <div className="edudate mb-4">{job.timespan}</div>
+  
+          <h3>{job.company}</h3>
+                    <h5 className="text-muted">{job.title}</h5>
+                    <ul>
+                    {description}
+                    </ul>
+          </div>
+          
+          
         </div>
-        <div className="col col-lg-4">
+        <div className="col col-lg-4 d-none d-lg-block">
           <div className="edudate">{job.timespan}</div>
         </div>
       </div>
