@@ -30,10 +30,6 @@ export default function Me(props) {
                     <td><a href="https://www.linkedin.com/in/jason-meredith-115b2384/">LinkedIn</a></td>
                   </tr>
                   <br />
-                  <tr>
-                    <td></td>
-                    <td><a href="resume.pdf">Resume</a> <small><a href="resume.json">(json)</a></small> </td>
-                  </tr>
                 </tbody>
 
               </table>
