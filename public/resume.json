@@ -22,7 +22,8 @@
         "Worked after hours week-long on-call shifts, providing quick response technical support for customer issues and system outages",
         "Spearheaded technical investigations and subsequent efforts into new integrations for our Backup product",
         "Peformed manual restores of Quickbooks accounts and Shopify stores using combinations of platform APIs and internal tooling",
-        "Assisted in proliferation of the BackHub architecture across AWS regions, providing US-based storage for data sovereignty-minded customers"
+        "Assisted in proliferation of the BackHub architecture across AWS regions, providing US-based storage for data sovereignty-minded customers",
+        "Designed and lead development on a per-seat billing system leveraging Stripe, spanning multiple AWS account and system architectures"
       ],
       "img": "/img/work/rewind.svg"
     }
