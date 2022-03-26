@@ -8,7 +8,7 @@ export default function Education(props) {
           <table className="edutable">
             <tbody>
               <tr>
-                <td className="eduicon"><img alt={credential.institute} src={credential.img} className="edu" /></td>
+                <td className="eduicon"><img alt={credential.institute} src={credential.img} className="edu img-fluid" /></td>
                 <td>
                   <h3>{credential.institute}</h3>
                   <h5 className="text-muted">{credential.program}</h5>
@@ -20,7 +20,7 @@ export default function Education(props) {
 
         </div>
         <div className="col col-lg-4">
-          <div className="edudate">{credential.timespan}</div>
+          <div className="edudate">[ {credential.timespan} ]</div>
         </div>
       </div>
     )
@@ -30,7 +30,7 @@ export default function Education(props) {
     <div className="jumbotron vertical-page">
       <div className="container">
         <section id="education">
-          <h2>Education</h2>
+          <h2>Credentials</h2>
           <br />
           {credentials}
           <br />

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Project(props) {
-  const links = props.links.map((link) => <><a key={link.label} href={link.url}>{link.label}</a><br /></>)
+  const links = props.links.map((link) => <><a target='_blank' key={link.label} href={link.url}>{link.label}</a><br /></>)
   const highlight = () => props.highlight(props.tech);
 
   return (

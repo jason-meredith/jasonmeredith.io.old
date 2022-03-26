@@ -17,7 +17,7 @@ export default class Article extends React.Component {
   }
 
   getContent() {
-    fetch(`/read/${this.props.name}.txt`)
+    fetch(`/read/${this.props.name}.md`)
     .then(data => data.text())
     .then(text => this.setState({content: text}));
   }

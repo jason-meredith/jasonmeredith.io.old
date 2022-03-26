@@ -40,7 +40,7 @@ export default class Introduction extends React.Component {
   render() {
     return (
       <div>
-        <Navbar me="Jason Meredith" projects="Projects" experience="Experience" education="Education" />
+        <Navbar me="Jason Meredith" projects="Projects" experience="Experience" education="Credentials" />
 
         <div className="content">
           <Me data={this.state.me} />
