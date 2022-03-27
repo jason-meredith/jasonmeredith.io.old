@@ -43,7 +43,7 @@ export default class Introduction extends React.Component {
         <Navbar me="Jason Meredith" projects="Projects" experience="Experience" education="Credentials" />
 
         <div className="content">
-          <Me data={this.state.me} />
+          <Me data={this.state} />
           <Divider />
 
           <Projects data={this.state.projects} />
