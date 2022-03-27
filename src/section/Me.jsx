@@ -21,7 +21,7 @@ export default function Me(props) {
                 <tbody>
                   <tr>
                     <td><img alt="Github Link" className="linkIcon" src="img/GitHub.png" /></td>
-                    <td><a href="https://www.github.com/jason-meredith">@jason-meredith</a></td>
+                    <td><a target='_blank' href="https://www.github.com/jason-meredith">@jason-meredith</a></td>
                   </tr>
                   <tr>
                     <td><img alt="Email Address" className="linkIcon" src="img/email.png" /></td>
@@ -29,7 +29,7 @@ export default function Me(props) {
                   </tr>
                   <tr>
                     <td><img alt="LinkedIn Link" className="linkIcon" src="img/linkedin.png" /></td>
-                    <td><a href="https://www.linkedin.com/in/jason-meredith-115b2384/">LinkedIn</a></td>
+                    <td><a target='_blank' href="https://www.linkedin.com/in/jason-meredith-115b2384/">LinkedIn</a></td>
                   </tr>
                   <tr>
                     <td><img alt="Resume Link" className="linkIcon" src="img/doc.png" /></td>
