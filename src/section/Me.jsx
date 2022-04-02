@@ -1,6 +1,4 @@
 import React from 'react';
-import { PDFDownloadLink } from '@react-pdf/renderer';
-import Resume from '../resume/Resume';
 
 export default function Me(props) {
   return (
@@ -33,13 +31,7 @@ export default function Me(props) {
                   </tr>
                   <tr>
                     <td><img alt="Resume Link" className="linkIcon" src="img/doc.png" /></td>
-                    <td>
-                      <PDFDownloadLink 
-                        document={<Resume data={props.data} />}
-                        fileName='jason-meredith-resume.pdf'
-                        children={<span>Resume</span>}
-                      />
-                    </td>
+                    <td><a target='_blank' href="/resume">Resume</a></td>
                   </tr>
                   <br />
                 </tbody>

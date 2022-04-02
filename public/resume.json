@@ -55,7 +55,7 @@
       "mysql",
       "redis",
       "rails",
-      "c",
+      "elastic",
       "aws",
       "mongodb",
       "nodejs",
@@ -115,7 +115,7 @@
       },
       {
         "name": "jasonmeredith.io",
-        "description": "Personal porfolio webpage built as a simple React.js app",
+        "description": "Personal porfolio webpage built as a simple React.js app with a dynamically generated resume PDF",
         "github": "https://www.github.com/jason-meredith/SQLvsMongoDB-Speedtest",
         "links": [
           {
