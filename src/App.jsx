@@ -7,6 +7,7 @@ import {
 import Blog from './Blog';
 
 import Introduction from './Introduction';
+import ResumePage from './resume/ResumePage';
 
 export default function App() {
   return (
@@ -18,6 +19,10 @@ export default function App() {
           
           <Route path="/blog">
             <Blog />
+          </Route>
+
+          <Route path="/resume">
+              <ResumePage />
           </Route>
 
           <Route path="">
